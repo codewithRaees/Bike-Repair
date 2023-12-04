@@ -1,0 +1,227 @@
+
+html{
+    background-image: linear-gradient(#D31E23,#F082AC);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../images/);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+h1{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+p{
+    line-height: 1.75;
+    margin-bottom: 1.75rem;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.logo img{
+    max-height: 120px;
+}
+header{
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    
+}
+nav{
+    display: flex;
+}
+main{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;   
+    margin-bottom: 1.5rem;
+
+}
+.cards{
+    justify-content: space-around;
+    display: flex;
+    text-align: center;
+    
+}
+.card1{
+    background-image: url('../images/1.jpg');
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 20px;
+    width: 30%;
+    margin-right: 20px;
+
+}
+.card2{
+    background-image: url('../images/2.jpg');
+    background-size: cover;
+    background-position: bottom;
+    
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+     min-height: 200px;
+    width: 30%;
+    margin-right: 20px;
+}
+.card3{
+    background-image: url('../images/3.jpg');
+    background-size: cover;
+    background-position: bottom;
+    opacity: 0.9;
+    border-radius: 20px;
+    min-height: 200px;
+    width: 30%;
+}
+.herobox1{
+    flex: 2;
+
+}
+h3{
+    margin-top: 20px;
+}
+.herobox2{
+   flex: 1;
+
+}
+.bikerepair{
+    width: 100%;
+    height: 477px;
+    border-radius: 20px;
+}
+.cards p{
+    line-height: 1rem;
+    line-height: 1.2rem;
+    font-size: .85rem;
+    margin-bottom: 0.5rem;
+    margin: 20px 30px;
+    
+}
+.cards i{
+    font-size: 70px;
+    padding-top:30px;
+}
+a{
+    color: #fff;
+    text-decoration: none   ;
+}
+.btn-book-online{
+    background-color: #fff;
+    color: #D31E23;
+    padding: 11px 25px;
+    border-radius: 0.7rem;
+    margin-left: 0.5rem;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.btn-navbar{
+    position: relative;
+    color: #fff;
+    border: 1px solid lightgray;
+    padding: 11px 25px;
+    margin-left: 0.5rem;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    transition: transform .2s; /* Animation */
+
+}
+.btn-navbar:hover{
+    transform: scale(1);
+    border: 1px solid #fff;
+}
+.btn-book-online:hover{
+    transform: scale(1);
+    border: 2px solid #D31E23;
+}
+.testaminals{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.tbox{
+    width: 47%;
+    margin-top: 3.5rem;
+    padding: 3rem;
+    border: 1px solid #fff;
+}
+.dropdown-menu{
+    display: none;
+    position: absolute ;
+    width: 200px;
+    z-index: 1;
+    padding-top: 0.7rem;
+    margin-left: -34px;
+    
+}
+.btn-navbar:hover .dropdown-menu{
+    display: block;
+    line-height: 2;
+}
+.link a:hover{
+    color: lightblue;
+}
+
+@media only screen and (max-width: 768px) {
+    .dropdown-menu{
+        display: none;
+        background-color: #D31E23;
+        position: absolute ;
+        width: 200px;
+        margin-top: 15px;
+        margin-left: -25px;
+        
+    }
+    
+    p {
+        line-height: 1.5;
+        margin-bottom: .75rem;
+    }
+    
+    a{
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+    }
+    .humberger{
+        display: block;
+    }
+    .herobox2{
+        display:none;
+    }
+    .btn-navbar{
+        padding: 10px 15px;
+    }
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .logo img {
+        max-height: 82px;
+    }
+    .tbox{
+        width: 100%;
+        margin-top: 1rem;
+        padding: 0.5rem;
+    }
+    .testaminals{
+        flex-direction: column;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .card1, .card2 , .card3 img{
+        background-position: top center;
+    }
+    .card1, .card2 , .card3{
+        width: 100%;
+        align-items: center;
+        margin-top: 20px;
+    }
+  }
